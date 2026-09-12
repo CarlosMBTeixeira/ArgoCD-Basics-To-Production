@@ -19,6 +19,6 @@ spec:
         - name: dockerhub-secret
       containers:
         - name: app1
-          image: cloudwithvarjosh/cwvj-app1:v1.0.0
+          image: cmbteixeira/argocd-varjosh-course-app1:v1.0.0
           ports:
             - containerPort: 5000
