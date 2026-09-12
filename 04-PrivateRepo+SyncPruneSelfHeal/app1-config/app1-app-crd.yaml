@@ -6,9 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/CloudWithVarJosh/cwvj-app1-config.git
+    repoURL: https://github.com/CarlosMBTeixeira/ArgoCD-Basics-To-Production.git
+    path: 04-PrivateRepo+SyncPruneSelfHeal/app1-config   # or wherever your manifests actually live in your repo
     targetRevision: HEAD
-    path: .
+    # repoURL: https://github.com/CloudWithVarJosh/cwvj-app1-config.git
+    # targetRevision: HEAD
+    # path: .
   destination:
     server: https://kubernetes.default.svc
     namespace: app1-ns
